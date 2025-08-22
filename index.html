@@ -39,7 +39,7 @@
       opacity: 1;
       transform: translateY(0);
     }
-  </style> 
+  </style>
 
 
 </head>
@@ -47,9 +47,11 @@
 <body class="bg-slate-50 text-slate-700">
 
   <!-- Navigation -->
-  <nav id="navbar" class="bg-slate-900 backdrop-blur-sm text-white p-4 sticky top-0 z-50 shadow-lg" >
+  <nav id="navbar" class="bg-slate-900 backdrop-blur-sm text-white p-4 sticky top-0 z-50 shadow-lg">
     <div class="container mx-auto flex justify-between items-center">
-      <a href="#home" class="text-2xl font-bold hover:text-blue-300 transition-colors">Munzir</a>
+      <!-- <a href="#home" class="text-2xl font-bold hover:text-blue-300 transition-colors">Munzir</a> -->
+      <img src="./assets/logo.png" alt="Sgo" class="h-10 w-auto object-contain" />
+
       <ul class="hidden md:flex items-center space-x-6">
         <li><a href="#home" class="hover:text-blue-300 transition-colors">Home</a></li>
         <li><a href="#about" class="hover:text-blue-300 transition-colors">About</a></li>
@@ -60,10 +62,11 @@
     </div>
   </nav>
 
+
   <!-- Hero Section -->
   <section id="home" class="gradient-bg text-white h-[calc(100vh-64px)] flex items-center justify-center">
     <div class="container mx-auto text-center px-4">
-      <h1 class="text-5xl md:text-6xl font-bold mb-4">Munzir</h1>
+      <h1 class="text-5xl md:text-6xl font-bold mb-4">Test</h1>
       <h2 class="text-2xl md:text-3xl mb-6 font-light">
         A <span id="typed-text" class="font-semibold text-blue-300"></span>
       </h2>
@@ -162,6 +165,83 @@
         <p class="text-slate-500 mt-2">A selection of my proudest work.</p>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+         <!-- Project Card 3 -->
+        <div class="bg-slate-50 p-8 rounded-lg shadow-sm card-hover flex flex-col scroll-animate"
+          style="transition-delay: 300ms;">
+          <h3 class="text-2xl font-semibold mb-2">Salesforce ↔ Cloud Storage Sync</h3>
+          <p class="text-slate-600 mb-4 flex-grow">
+            Bi-directional file sync between Salesforce Files and Google Drive, OneDrive, and Dropbox.
+            Uploads in Salesforce mirror to connected drives, and external updates can be pulled back
+            with versioning and metadata preserved.
+          </p>
+
+          <div class="mb-4">
+            <h4 class="font-semibold text-slate-700 mb-2">Key Features:</h4>
+            <ul class="list-disc list-inside text-slate-600 space-y-1">
+              <li>Secure OAuth2 connections per user</li>
+              <li>Record-based folder mapping and metadata sync</li>
+              <li>Async/batch sync with conflict handling</li>
+              <li>File versioning and audit trail</li>
+            </ul>
+          </div>
+
+          <div class="mt-auto">
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="text-sm font-semibold text-blue-600 bg-blue-100 py-1 px-3 rounded-full">Integrations</span>
+              <span class="text-sm font-semibold text-indigo-600 bg-indigo-100 py-1 px-3 rounded-full">Apex</span>
+              <span class="text-sm font-semibold text-emerald-600 bg-emerald-100 py-1 px-3 rounded-full">REST
+                APIs</span>
+              <span class="text-sm font-semibold text-gray-700 bg-gray-100 py-1 px-3 rounded-full">Automation</span>
+            </div>
+
+            <div class="bg-green-50 border-l-4 border-green-500 p-3 rounded-r-lg">
+              <p class="text-green-700 font-medium">
+                <strong>Outcome:</strong> Faster collaboration and a single source of truth across CRM and storage
+                platforms.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 4 -->
+        <div class="bg-slate-50 p-8 rounded-lg shadow-sm card-hover flex flex-col scroll-animate"
+          style="transition-delay: 450ms;">
+          <h3 class="text-2xl font-semibold mb-2">OmniScript Approval & Sign-off Flow</h3>
+          <p class="text-slate-600 mb-4 flex-grow">
+            Role-aware OmniScripts for Client, Supervisor, and Manager. Supervisors submit structured forms;
+            Managers review with validations and digital sign-off. Status, permissions, and auditability are enforced
+            end-to-end.
+          </p>
+
+          <div class="mb-4">
+            <h4 class="font-semibold text-slate-700 mb-2">Key Features:</h4>
+            <ul class="list-disc list-inside text-slate-600 space-y-1">
+              <li>Profile/role-based script variants</li>
+              <li>Server-side validations (Apex/Integration Procedures)</li>
+              <li>Approval routing with notifications</li>
+              <li>Digital signature capture and history</li>
+            </ul>
+          </div>
+
+          <div class="mt-auto">
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="text-sm font-semibold text-sky-600 bg-sky-100 py-1 px-3 rounded-full">OmniStudio</span>
+              <span class="text-sm font-semibold text-indigo-600 bg-indigo-100 py-1 px-3 rounded-full">Apex</span>
+              <span
+                class="text-sm font-semibold text-fuchsia-600 bg-fuchsia-100 py-1 px-3 rounded-full">Approvals</span>
+              <span class="text-sm font-semibold text-gray-700 bg-gray-100 py-1 px-3 rounded-full">Custom UI/UX</span>
+            </div>
+
+            <div class="bg-green-50 border-l-4 border-green-500 p-3 rounded-r-lg">
+              <p class="text-green-700 font-medium">
+                <strong>Outcome:</strong> Shorter turnaround, stronger compliance, and clear accountability across
+                stages.
+              </p>
+            </div>
+          </div>
+        </div>
+        
         <!-- Project Card 1 -->
         <div class="bg-slate-50 p-8 rounded-lg shadow-sm card-hover flex flex-col scroll-animate">
           <h3 class="text-2xl font-semibold mb-2">Scheduling & Travel Management</h3>
@@ -215,6 +295,12 @@
             </div>
           </div>
         </div>
+
+
+
+       
+
+
       </div>
     </div>
   </section>
@@ -267,7 +353,7 @@
   </footer>
 
   <script>
-    
+
     document.addEventListener('DOMContentLoaded', () => {
 
       // 1. Typed.js for animated text in the hero section
